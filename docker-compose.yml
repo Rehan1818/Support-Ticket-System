@@ -1,0 +1,24 @@
+version: "3.9"
+
+services:
+
+  backend:
+  build: ./backend
+  container_name: backend
+  command: python manage.py runserver 0.0.0.0:8000
+  ports:
+    - "8000:8000"
+  restart: always
+  env_file:
+    - .env
+
+  frontend:
+    build: ./frontend
+    container_name: frontend
+    ports:
+      - "3000:3000"
+    depends_on:
+      - backend
+    volumes:
+      - ./frontend:/app
+    restart: always
