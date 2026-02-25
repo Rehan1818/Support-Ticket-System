@@ -1,6 +1,6 @@
 # 🧠 AI-Powered Support Ticket System
 
-A full-stack, production-ready support ticket management system built using React, Django REST Framework, PostgreSQL, Docker, and LLM APIs. The system allows users to submit, browse, filter, and manage support tickets, with AI-powered auto-classification of ticket category and priority using a Large Language Model (LLM).
+A full-stack, production-ready support ticket management system built using React, Django REST Framework, SQLite, Docker, and LLM APIs. The system allows users to submit, browse, filter, and manage support tickets, with AI-powered auto-classification of ticket category and priority using a Large Language Model (LLM).
 
 # 🚀 Features
 ## 🎟 Ticket Management
